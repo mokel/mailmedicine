@@ -1,8 +1,9 @@
 package fr.mokel;
 
+import java.io.Serializable;
 import java.util.Date;  
 
-public class Comment  {
+public class Comment  implements Serializable {
     private String text;
     private Date date = new Date();
 
