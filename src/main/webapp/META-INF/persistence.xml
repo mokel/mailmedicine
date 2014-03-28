@@ -1,0 +1,10 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"	version="1.0">
+	<persistence-unit name="rasp-db">
+		<jta-data-source>raspDatabase</jta-data-source>
+		<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+		<properties>
+			<property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)" />
+			<property name="hsqldb.applog" value="3" />
+		</properties>
+	</persistence-unit>
+</persistence>
